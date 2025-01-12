@@ -1,6 +1,6 @@
 .Navbar {
     background-color: gold;
-    height: 7rem;
+    height: 6rem;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -15,6 +15,11 @@
 .logo {
     height: 100px;
     width: 200px;
+    cursor: pointer;
+}
+
+.nav {
+    margin: 15px;
 }
 
 .nav li {
@@ -27,22 +32,19 @@
 
 .nav li:hover {
     text-decoration: underline;
-    color: #F8FAFC;
     cursor: pointer;
-    transition:0.5s ease-in-out;
-    background-color: rgb(165, 164, 164);
-    padding: 5px;
-    border-radius: 15px;
-    box-shadow: 2px 2px black;
+    font-weight: bold;
+    transition:0.1s ease-in-out;    
 }
 
 .hamburger {
     display: none;
+    cursor: pointer;
 }
 
 @media (max-width: 767px){
     .logo {
-        height: 74px;
+        height: 85px;
     }
 
     .hamburger {
@@ -57,6 +59,13 @@
     }
     .nav {
         background-color: gold;
-        padding: 0 0 1px 20px;
+        margin: 0;
+        padding: 5px 0 1px 0 ;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .nav li {
+        margin: 0;
     }
 }
